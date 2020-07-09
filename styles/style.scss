@@ -65,6 +65,7 @@ body {
             font-weight: 800;
             margin-bottom: 1rem;
             color: #fc5c65;
+            text-align: center;
         }
 
         .role-desc {
@@ -128,6 +129,24 @@ body {
             margin-top: 1rem;
             border-radius: 10px;
             align-self: center;
+        }
+
+        .projj {
+            margin-top: 1rem;
+
+
+            .proj-img1 {
+                width: 60%;
+                margin: 0 2%;
+                border-radius: 10px;
+            }
+
+            .proj-img2 {
+                width: 20%;
+                height: 300px;
+                border-radius: 10px;
+            }
+
         }
 
         .proj-desc {
@@ -259,3 +278,11 @@ body {
 
 
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (max-width: 575px) {}
