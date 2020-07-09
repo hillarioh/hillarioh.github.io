@@ -11,7 +11,7 @@
 }
 
 .header {
-  min-height: 90vh;
+  min-height: 100vh;
   background: #f8e7e7;
   padding-top: 2rem;
 }
@@ -64,17 +64,18 @@
 }
 
 .header .intro .role {
-  font-size: 36px;
+  font-size: 70px;
   font-weight: 800;
   margin-bottom: 1rem;
+  color: #fc5c65;
 }
 
 .header .intro .role-desc {
   display: block;
   font-size: 24px;
   text-align: center;
-  max-width: 60%;
-  margin-bottom: 2rem;
+  max-width: 70%;
+  margin-bottom: 2.5rem;
 }
 
 .about {
@@ -89,17 +90,19 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 3rem 0;
+  background: #eb3b5a;
+  color: white;
 }
 
 .about h4 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 .about p {
   max-width: 70%;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .projects {
@@ -120,16 +123,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 2px solid red;
-  height: 320px;
   width: 70%;
+  border-radius: 5px;
+  margin-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects .project .proj-img {
   width: 86%;
-  background-image: url("https://github.com/hillarioh/fav-movie-line-capstone/raw/master/app/assets/images/screenshoot.png");
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .projects .project .proj-desc {
@@ -137,7 +146,7 @@
 }
 
 .projects .project .proj-desc .proj-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
@@ -161,5 +170,24 @@
   border: 2px solid #be5656;
   border-radius: 2px;
   margin-right: 6px;
+}
+
+.projects .project .proj-desc .source {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.projects .project .proj-desc .source span {
+  padding: 6px 10px;
+  background: #be5656;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.projects .project .proj-desc .source span a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */
