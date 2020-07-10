@@ -21,6 +21,7 @@ body {
 .header {
   min-height: 100vh;
   padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .header .nav {
@@ -107,7 +108,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 70vh;
+  padding: 7rem 0;
   background: radial-gradient(#e97b8f, #eb3b5a);
   color: white;
 }
@@ -168,6 +169,12 @@ body {
 
 .projects .project .projj {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects .project .projj .proj-img1 {
@@ -233,10 +240,7 @@ body {
 }
 
 .contact {
-  height: 80vh;
   background: #faf5f5;
-  position: relative;
-  padding-top: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,14 +253,17 @@ body {
           align-items: center;
 }
 
+.contact h2 {
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
 .contact .f1 {
-  position: absolute;
-  top: 30%;
-  padding: 1rem;
+  padding: 7rem;
 }
 
 .contact .f1 .footer-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -301,15 +308,42 @@ body {
 }
 
 .contact .f2 {
-  bottom: 0;
   padding: 1rem;
   width: 100%;
   background: #fc5c65;
-  position: absolute;
-  bottom: 0;
 }
 
 .contact .f2 p {
   text-align: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .projj .proj-img1 {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header .intro {
+    padding-top: 0.5rem;
+  }
+  .header .intro .role {
+    font-size: 60px;
+  }
+  .header .intro .role-desc {
+    max-width: 90%;
+  }
+  .about p {
+    max-width: 90%;
+  }
+  .projects .project {
+    width: 90%;
+  }
+  .projects .project .projj .proj-img1 {
+    height: 250px;
+  }
+  .projects .project .projj .proj-img2 {
+    height: 250px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

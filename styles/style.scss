@@ -20,6 +20,7 @@ body {
 .header {
     min-height: 100vh;
     padding-top: 2rem;
+    padding-bottom: 3rem;
 
     .nav {
         display: flex;
@@ -83,8 +84,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
-    // padding: 3rem 0;
+    padding: 7rem 0;
+    // margin: 2rem 0;
     background: radial-gradient(#e97b8f, #eb3b5a);
     color: white;
 
@@ -133,6 +134,8 @@ body {
 
         .projj {
             margin-top: 1rem;
+            display: flex;
+            justify-content: center;
 
 
             .proj-img1 {
@@ -202,21 +205,21 @@ body {
 
 
 .contact {
-    height: 80vh;
     background: #faf5f5;
-    position: relative;
-    padding-top: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    h2 {
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+
     .f1 {
-        position: absolute;
-        top: 30%;
-        padding: 1rem;
+        padding: 7rem;
 
         .footer-title {
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-align: center;
             margin-bottom: 1rem;
         }
@@ -262,14 +265,9 @@ body {
     }
 
     .f2 {
-        bottom: 0;
         padding: 1rem;
         width: 100%;
         background: #fc5c65;
-        position: absolute;
-        bottom: 0;
-
-
 
         p {
             text-align: center;
@@ -279,9 +277,52 @@ body {
 
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .projj {
+        .proj-img1 {
+            height: 300px;
+        }
+    }
+}
 
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        .intro {
+            padding-top: 0.5rem;
+
+            .role {
+                font-size: 60px;
+            }
+
+            .role-desc {
+                max-width: 90%;
+            }
+        }
+    }
+
+    .about {
+        p {
+            max-width: 90%;
+        }
+    }
+
+    .projects {
+
+        .project {
+            width: 90%;
+
+            .projj {
+                .proj-img1 {
+                    height: 250px;
+                }
+
+                .proj-img2 {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
 
 @media (min-width: 576px) and (max-width: 767px) {}
 
