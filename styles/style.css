@@ -63,6 +63,49 @@ body {
   color: #fc5c65;
 }
 
+.header .nav1 {
+  display: none;
+  padding: 1rem;
+  background-color: #333;
+  position: relative;
+}
+
+.header .nav1 .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav1 .upper i {
+  font-size: 50px;
+  color: #fc5c65;
+}
+
+.header .nav1 ul {
+  display: none;
+  list-style: none;
+}
+
+.header .nav1 ul .plink {
+  border-top: 1px solid #fc5c65;
+  border-bottom: 1px solid #fc5c65;
+}
+
+.header .nav1 ul a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fc5c65;
+  line-height: 1.4em;
+  padding: 8px;
+}
+
 .header .intro {
   margin: 0 3rem;
   padding-top: 4rem;
@@ -329,6 +372,47 @@ body {
   }
   .header .intro .role {
     font-size: 60px;
+  }
+  .header .intro .role-desc {
+    max-width: 90%;
+  }
+  .about p {
+    max-width: 90%;
+  }
+  .projects .project {
+    width: 90%;
+  }
+  .projects .project .projj .proj-img1 {
+    height: 250px;
+  }
+  .projects .project .projj .proj-img2 {
+    height: 250px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .nav1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .intro {
+    padding-top: 2.5rem;
+    margin: 0;
+  }
+  .header .intro .role {
+    font-size: 45px;
   }
   .header .intro .role-desc {
     max-width: 90%;
