@@ -135,6 +135,7 @@ body {
     h4 {
         font-size: 30px;
         font-weight: 700;
+        text-align: center;
     }
 
     p {
@@ -161,11 +162,9 @@ body {
         display: flex;
         flex-direction: column;
         background: rgb(250, 238, 238);
-        // height: 320px;
         width: 70%;
         border-radius: 5px;
         margin-top: 2rem;
-        // align-items: center;
 
 
         .proj-img {
@@ -382,8 +381,9 @@ body {
         }
 
         .intro {
-            padding-top: 2.5rem;
+            padding-top: 5rem;
             margin: 0;
+            padding-bottom: 3.5rem;
 
             .role {
                 font-size: 45px;
@@ -396,6 +396,8 @@ body {
     }
 
     .about {
+        padding: 5rem 0;
+
         p {
             max-width: 90%;
         }
@@ -404,7 +406,11 @@ body {
     .projects {
 
         .project {
-            width: 90%;
+            width: 95%;
+
+            .proj-img1 {
+                width: 90%;
+            }
 
             .projj {
                 .proj-img1 {
@@ -415,6 +421,12 @@ body {
                     height: 250px;
                 }
             }
+        }
+    }
+
+    .contact {
+        .f1 {
+            padding: 2rem;
         }
     }
 }
