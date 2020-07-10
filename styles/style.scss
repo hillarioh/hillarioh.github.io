@@ -10,7 +10,8 @@
 }
 
 body {
-    background: #f1faee
+    background: white;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .hidden {
@@ -155,7 +156,7 @@ body {
     .project {
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #f1faee;
         width: 70%;
         border-radius: 5px;
         margin-top: 2rem;

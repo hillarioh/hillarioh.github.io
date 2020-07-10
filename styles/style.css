@@ -11,7 +11,8 @@
 }
 
 body {
-  background: #f1faee;
+  background: white;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .hidden {
@@ -191,7 +192,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: white;
+  background: #f1faee;
   width: 70%;
   border-radius: 5px;
   margin-top: 2rem;
