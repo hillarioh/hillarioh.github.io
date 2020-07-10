@@ -10,7 +10,7 @@
 }
 
 body {
-    background: white
+    background: #f1faee
 }
 
 .hidden {
@@ -41,7 +41,7 @@ body {
                     text-decoration: none;
                     font-size: 25px;
                     font-weight: 600;
-                    color: black;
+                    color: #457b9d;
                 }
             }
         }
@@ -53,7 +53,7 @@ body {
         display: none;
         padding: 1rem;
         // overflow: hidden;
-        background-color: #333;
+        background-color: #1d3557;
         position: relative;
 
         .upper {
@@ -63,7 +63,7 @@ body {
 
             i {
                 font-size: 50px;
-                color: #fc5c65;
+                color: #f1faee;
             }
         }
 
@@ -72,8 +72,8 @@ body {
             list-style: none;
 
             .plink {
-                border-top: 1px solid #fc5c65;
-                border-bottom: 1px solid #fc5c65;
+                border-top: 1px solid #a8dadc;
+                border-bottom: 1px solid #a8dadc;
             }
 
 
@@ -81,7 +81,7 @@ body {
                 text-decoration: none;
                 font-size: 25px;
                 font-weight: 600;
-                color: #fc5c65;
+                color: #457b9d;
                 line-height: 1.4em;
                 padding: 8px;
             }
@@ -101,7 +101,7 @@ body {
             font-size: 70px;
             font-weight: 800;
             margin-bottom: 1rem;
-            color: black;
+            color: #1d3557;
             text-align: center;
         }
 
@@ -122,7 +122,7 @@ body {
     justify-content: center;
     padding: 7rem 0;
     // margin: 2rem 0;
-    background: radial-gradient(#e97b8f, #eb3b5a);
+    background: radial-gradient(#6d9b9c, #457b9d);
     color: white;
 
     h4 {
@@ -148,13 +148,14 @@ body {
     .pt {
         font-size: 40px;
         font-weight: 700;
+        color: #1d3557
     }
 
 
     .project {
         display: flex;
         flex-direction: column;
-        background: rgb(250, 238, 238);
+        background: white;
         width: 70%;
         border-radius: 5px;
         margin-top: 2rem;
@@ -194,6 +195,7 @@ body {
                 font-size: 24px;
                 font-weight: 700;
                 margin-bottom: 1.5rem;
+                color: #1d3557;
             }
 
             p {
@@ -208,9 +210,10 @@ body {
                 li {
                     list-style-type: none;
                     padding: 4px 8px;
-                    border: 2px solid #be5656;
+                    border: 2px solid #1d3557;
                     border-radius: 2px;
                     margin-right: 6px;
+                    color: #457b9d;
                 }
             }
 
@@ -221,7 +224,7 @@ body {
 
                 span {
                     padding: 6px 10px;
-                    background: #be5656;
+                    background: #457b9d;
                     // color: whitesmoke;
                     font-weight: 600;
                     margin-right: 4px;
@@ -240,7 +243,7 @@ body {
 
 
 .contact {
-    background: #faf5f5;
+    background: #457b9d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,10 +251,13 @@ body {
     h2 {
         font-size: 3rem;
         padding-top: 1rem;
+        color: #f1faee;
+        text-decoration: underline;
     }
 
     .f1 {
         padding: 7rem;
+        color: #a8dadc;
 
         .footer-title {
             font-size: 2rem;
@@ -280,15 +286,15 @@ body {
 
                     i {
                         font-size: 1.5rem;
-                        border: 2px solid red;
+                        border: 2px solid #a8dadc;
                         border-radius: 50%;
                         padding: 9px 10px;
-                        color: #eb3b5a;
+                        color: #1d3557;
                         // transition: background 0.3s ease;
 
                         &:hover {
-                            background: #eb3b5a;
-                            color: white;
+                            background: #f1faee;
+                            color: #457b9d;
                         }
                     }
                 }
@@ -299,10 +305,13 @@ body {
     .f2 {
         padding: 1rem;
         width: 100%;
-        background: darkblue;
+        background: #1d3557;
 
         p {
             text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
         }
     }
 
