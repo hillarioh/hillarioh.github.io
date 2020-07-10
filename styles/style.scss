@@ -10,7 +10,7 @@
 }
 
 body {
-    background: rgb(248, 231, 231);
+    background: white
 }
 
 .hidden {
@@ -30,13 +30,6 @@ body {
         padding: 2rem;
         margin: 0 3rem;
 
-
-        .title {
-            color: #730b0b;
-            font-weight: 600;
-            font-size: 50px;
-        }
-
         ul {
             display: flex;
 
@@ -48,7 +41,7 @@ body {
                     text-decoration: none;
                     font-size: 25px;
                     font-weight: 600;
-                    color: #fc5c65;
+                    color: black;
                 }
             }
         }
@@ -108,7 +101,7 @@ body {
             font-size: 70px;
             font-weight: 800;
             margin-bottom: 1rem;
-            color: #fc5c65;
+            color: black;
             text-align: center;
         }
 
@@ -306,7 +299,7 @@ body {
     .f2 {
         padding: 1rem;
         width: 100%;
-        background: #fc5c65;
+        background: darkblue;
 
         p {
             text-align: center;

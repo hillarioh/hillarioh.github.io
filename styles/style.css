@@ -11,7 +11,7 @@
 }
 
 body {
-  background: #f8e7e7;
+  background: white;
 }
 
 .hidden {
@@ -39,12 +39,6 @@ body {
   margin: 0 3rem;
 }
 
-.header .nav .title {
-  color: #730b0b;
-  font-weight: 600;
-  font-size: 50px;
-}
-
 .header .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +54,7 @@ body {
   text-decoration: none;
   font-size: 25px;
   font-weight: 600;
-  color: #fc5c65;
+  color: black;
 }
 
 .header .nav1 {
@@ -125,7 +119,7 @@ body {
   font-size: 70px;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #fc5c65;
+  color: black;
   text-align: center;
 }
 
@@ -354,7 +348,7 @@ body {
 .contact .f2 {
   padding: 1rem;
   width: 100%;
-  background: #fc5c65;
+  background: darkblue;
 }
 
 .contact .f2 p {
