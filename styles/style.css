@@ -146,7 +146,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 7rem 0;
-  background: radial-gradient(#6d9b9c, #457b9d);
+  background: radial-gradient(#6d9b9c, #457b9d, #1d3557);
   color: white;
 }
 
