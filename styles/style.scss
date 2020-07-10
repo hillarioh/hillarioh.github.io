@@ -282,11 +282,8 @@ body {
                 list-style-type: none;
                 margin: 0 1rem;
 
-
                 a {
                     text-decoration: none;
-
-
 
                     i {
                         font-size: 1.5rem;
@@ -431,4 +428,143 @@ body {
     }
 }
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .header {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .nav {
+            display: none;
+        }
+
+        .nav1 {
+            display: flex;
+            flex-direction: column;
+
+            .upper {
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                i {
+                    font-size: 25px;
+                }
+
+            }
+
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+        }
+
+        .intro {
+            padding-top: 3rem;
+            margin: 0;
+            padding-bottom: 3.5rem;
+
+            .role {
+                font-size: 30px;
+            }
+
+            .role-desc {
+                max-width: 90%;
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .about {
+        padding: 5rem 0;
+
+        h4 {
+            font-size: 1.5em;
+        }
+
+        p {
+            max-width: 90%;
+            font-size: 1.2rem;
+        }
+    }
+
+    .projects {
+
+        .project {
+            width: 95%;
+
+            img {
+                display: none;
+            }
+
+            .projj {
+                display: none;
+
+                .proj-img1 {
+                    height: 250px;
+                }
+
+                .proj-img2 {
+                    height: 250px;
+                }
+            }
+
+            .proj-desc {
+                padding: 2rem 1rem;
+
+                h4 {
+                    font-size: 1.8em;
+                }
+
+                p {
+                    font-size: 1.125em;
+                }
+
+                ul {
+                    li {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        h2 {
+            font-size: 1.8em;
+        }
+
+        .f1 {
+            padding: 2rem;
+
+            .footer-title {
+                font-size: 1.5em;
+            }
+
+            .footer-desc {
+                font-size: 1.125em;
+            }
+
+            ul {
+                li {
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+
+
+
+
+    }
+}
