@@ -5,11 +5,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: eurot;
-  src: url(EurostileBold.ttf);
-}
-
 body {
   background: white;
   font-family: 'Quicksand', sans-serif;
