@@ -3,11 +3,64 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 300;
+  font-display: block;
+  src: url("../fonts/Rubik-Light.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-display: block;
+  src: url("../fonts/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 600;
+  font-display: block;
+  src: url("../fonts/Rubik-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-display: block;
+  src: url("../fonts/Rubik-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 800;
+  font-display: block;
+  src: url("../fonts/Rubik-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 900;
+  font-display: block;
+  src: url("../fonts/Rubik-Black.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: white;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .hidden {
@@ -16,7 +69,6 @@ body {
 
 .header {
   min-height: 100vh;
-  padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
@@ -30,8 +82,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: eurot, sans-serif;
-  padding: 2rem;
+  padding: 1rem;
   margin: 0 3rem;
 }
 
@@ -48,9 +99,9 @@ body {
 
 .header .nav ul li a {
   text-decoration: none;
-  font-size: 25px;
-  font-weight: 600;
-  color: #457b9d;
+  font-size: 22px;
+  font-weight: 400;
+  color: #53d6fe;
 }
 
 .header .nav1 {
@@ -98,7 +149,7 @@ body {
 
 .header .intro {
   margin: 0 3rem;
-  padding-top: 4rem;
+  padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,11 +162,17 @@ body {
           align-items: center;
 }
 
+.header .intro img {
+  width: 250px;
+  height: 240px;
+  border-radius: 50%;
+}
+
 .header .intro .role {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
-  margin-bottom: 1rem;
-  color: #1d3557;
+  margin: 1rem 0;
+  color: #53d6fe;
   text-align: center;
 }
 
@@ -141,13 +198,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 7rem 0;
+  height: 80vh;
   background: radial-gradient(#6d9b9c, #457b9d, #1d3557);
   color: white;
 }
 
 .about h4 {
-  font-size: 30px;
+  font-size: 40px;
+  margin-bottom: 1rem;
   font-weight: 700;
   text-align: center;
 }
@@ -156,7 +214,8 @@ body {
   max-width: 70%;
   text-align: center;
   font-size: 1.375em;
-  line-height: 1.4em;
+  font-weight: 400;
+  line-height: 2.5rem;
 }
 
 .projects {
@@ -170,7 +229,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .projects .pt {
@@ -179,7 +238,16 @@ body {
   color: #1d3557;
 }
 
-.projects .project {
+.projects .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects .row .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,60 +255,64 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #f1faee;
-  width: 70%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   border-radius: 5px;
-  margin-top: 2rem;
+  background-color: #f7f7f8;
+  margin: 0 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 3px 12px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 3px 12px -1px rgba(0, 0, 0, 0.75);
 }
 
-.projects .project .proj-img {
-  width: 86%;
-  margin-top: 1rem;
+.projects .row .project .proj-img {
+  width: 100%;
+  height: 200px;
   border-radius: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
-.projects .project .projj {
-  margin-top: 1rem;
+.projects .row .project .projj {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.projects .project .projj .proj-img1 {
-  width: 60%;
-  margin: 0 2%;
+.projects .row .project .projj .proj-img1 {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  margin-right: 5px;
+  height: 200px;
   border-radius: 10px;
 }
 
-.projects .project .projj .proj-img2 {
-  width: 20%;
-  height: 300px;
+.projects .row .project .projj .proj-img2 {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  height: 200px;
   border-radius: 10px;
 }
 
-.projects .project .proj-desc {
-  padding: 2rem 3rem;
+.projects .row .project .proj-desc {
+  padding-top: 1rem;
 }
 
-.projects .project .proj-desc .proj-title {
+.projects .row .project .proj-desc .proj-title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   color: #1d3557;
 }
 
-.projects .project .proj-desc p {
-  font-size: 20px;
+.projects .row .project .proj-desc p {
+  font-size: 16px;
   margin-bottom: 1.5rem;
 }
 
-.projects .project .proj-desc ul {
+.projects .row .project .proj-desc ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,32 +320,37 @@ body {
       flex-wrap: wrap;
 }
 
-.projects .project .proj-desc ul li {
+.projects .row .project .proj-desc ul li {
   list-style-type: none;
   padding: 4px 8px;
   border: 2px solid #1d3557;
   border-radius: 2px;
-  margin-right: 6px;
+  margin: 3px;
   color: #457b9d;
 }
 
-.projects .project .proj-desc .source {
+.projects .row .project .proj-desc .source {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
 }
 
-.projects .project .proj-desc .source span {
+.projects .row .project .proj-desc .source span {
   padding: 6px 10px;
   background: #457b9d;
   font-weight: 600;
   margin-right: 4px;
 }
 
-.projects .project .proj-desc .source span a {
+.projects .row .project .proj-desc .source span a {
   text-decoration: none;
   color: whitesmoke;
+}
+
+.projects .row .project:hover {
+  -webkit-box-shadow: 2px -1px 12px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px -1px 12px 0px rgba(0, 0, 0, 0.75);
 }
 
 .contact {
