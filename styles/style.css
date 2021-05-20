@@ -166,6 +166,7 @@ body {
   width: 250px;
   height: 240px;
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 .header .intro .role {
@@ -199,7 +200,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 80vh;
-  background: radial-gradient(#6d9b9c, #457b9d, #1d3557);
+  background: radial-gradient(#62cbeb, #56b3cf, #14a5d1);
   color: white;
 }
 
@@ -353,6 +354,12 @@ body {
           box-shadow: 2px -1px 12px 0px rgba(0, 0, 0, 0.75);
 }
 
+.projects .row .t {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .contact {
   background: #457b9d;
   display: -webkit-box;
@@ -427,7 +434,7 @@ body {
 .contact .f2 {
   padding: 1rem;
   width: 100%;
-  background: #1d3557;
+  background: #043847;
 }
 
 .contact .f2 p {

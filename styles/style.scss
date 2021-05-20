@@ -144,6 +144,7 @@ body {
       width: 250px;
       height: 240px;
       border-radius: 50%;
+      margin-bottom: 1rem;
     }
 
     .role {
@@ -170,7 +171,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 80vh;
-  background: radial-gradient(#6d9b9c, #457b9d, #1d3557);
+  // color: #62cbeb;
+  background: radial-gradient(#62cbeb, #56b3cf, #14a5d1);
   color: white;
 
   h4 {
@@ -205,6 +207,7 @@ body {
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
+
     .project {
       display: flex;
       flex-direction: column;
@@ -241,6 +244,7 @@ body {
 
       .proj-desc {
         padding-top: 1rem;
+
         .proj-title {
           font-size: 24px;
           font-weight: 700;
@@ -286,9 +290,14 @@ body {
           }
         }
       }
+
       &:hover {
         box-shadow: 2px -1px 12px 0px rgba(0, 0, 0, 0.75);
       }
+    }
+
+    .t {
+      flex: 1;
     }
   }
 }
@@ -356,7 +365,7 @@ body {
   .f2 {
     padding: 1rem;
     width: 100%;
-    background: #1d3557;
+    background: #043847;
 
     p {
       text-align: center;
@@ -478,6 +487,7 @@ body {
 }
 
 @media (max-width: 575px) {
+
   html,
   body {
     max-width: 100%;
